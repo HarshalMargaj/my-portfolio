@@ -1,0 +1,29 @@
+[
+	{
+		"id": 1,
+		"name": "Oculon.AI",
+		"duration": "Jan 2024 - Dec 2024",
+		"role": "Front-end Developer",
+		"location": "Mumbai, Maharashtra",
+		"experience": [
+			"Developed responsive and interactive user interfaces using ReactJS, ensuring accessibility and enhancing the overall user experience.",
+			"Built a customizable settings panel, enabling users to personalize product features and improve engagement through tailored UI/UX.",
+			"Designed and developed a comprehensive dashboard with custom plugins for charts, metrics, and dynamic tables, delivering advanced data visualization capabilities.",
+			"Integrated RESTful APIs to enable seamless data flow between frontend and backend components, ensuring smooth functionality and real-time interaction.",
+			"Collaborated with backend teams to design and implement APIs, ensuring synchronization and efficient data handling across the platform.",
+			"Authored clean, modular, and scalable frontend code, improving application performance and maintainability.",
+			"Enhanced platform usability by creating intuitive, user-centric designs and interactive UI components, reducing user-reported issues by 15%.",
+			"Optimized frontend performance, reducing load times and ensuring smooth rendering across devices and browsers.",
+			"Implemented modern frontend development practices, including state management and reusable component architecture, to accelerate feature delivery."
+		],
+		"technologies": [
+			"React.JS",
+			"Next.JS",
+			"Redux",
+			"Tailwind.CSS",
+			"Figma",
+			"JavaScript",
+			"Git and Github"
+		]
+	}
+]
