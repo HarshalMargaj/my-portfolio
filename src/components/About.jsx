@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const About = () => {
+const About = ({ theme }) => {
 	return (
 		<div className="h-full md:h-screen flex justify-center items-center py-20">
 			<motion.div
@@ -17,7 +17,9 @@ const About = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: false }}
 					transition={{ duration: 1, delay: 0.3 }}
-					className="text-4xl text-white"
+					className={`text-4xl ${
+						theme ? `text-white` : "text-gray-900"
+					}`}
 				>
 					About Me
 				</motion.h1>
@@ -28,23 +30,53 @@ const About = () => {
 					whileInView={{ opacity: 1, scale: 1 }}
 					viewport={{ once: false }}
 					transition={{ duration: 1, delay: 0.6 }}
-					className="bg-purple-100/5 text-white md:p-10 p-4 rounded-lg md:text-lg text-sm italic leading-8"
+					className={`${
+						theme
+							? `bg-purple-100/5 text-white`
+							: "bg-gray-800/5 text-purple-950"
+					} md:p-10 p-4 rounded-lg md:text-lg text-sm italic leading-8`}
 				>
 					Hey there! I'm Harshal Margaj, a passionate{" "}
-					<span className="text-purple-400">Front-End Developer</span>{" "}
+					<span
+						className={`${
+							theme ? "text-purple-400" : "text-purple-600"
+						}`}
+					>
+						Front-End Developer
+					</span>{" "}
 					from Nashik, India with{" "}
-					<span className="text-purple-400">
+					<span
+						className={`${
+							theme ? "text-purple-400" : "text-purple-600"
+						}`}
+					>
 						1 year of experience
 					</span>{" "}
 					as a
-					<span className="text-purple-400">Software Engineer</span>.
-					I specialize in crafting high-performance, scalable, and
+					<span
+						className={`${
+							theme ? "text-purple-400" : "text-purple-600"
+						}`}
+					>
+						Software Engineer
+					</span>
+					. I specialize in crafting high-performance, scalable, and
 					visually engaging web applications that elevate user
 					experiences. I graduated in 2023 from Vishwakarma Institute
 					of Information Technology, Pune, securing an{" "}
-					<span className="text-purple-400">8.45 CGPA</span>. My
-					expertise lies in{" "}
-					<span className="text-purple-400">
+					<span
+						className={`${
+							theme ? "text-purple-400" : "text-purple-600"
+						}`}
+					>
+						8.45 CGPA
+					</span>
+					. My expertise lies in{" "}
+					<span
+						className={`${
+							theme ? "text-purple-400" : "text-purple-600"
+						}`}
+					>
 						React.js, Next.js, Redux, Git, GitHub, and Tailwind CSS
 					</span>{" "}
 					, and I have a strong focus on code optimization to ensure

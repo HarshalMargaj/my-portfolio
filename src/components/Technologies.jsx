@@ -23,14 +23,14 @@ const techStack = [
 	{ icon: <SiRedux className="text-purple-400" />, name: "Redux" },
 ];
 
-const Technologies = () => {
+const Technologies = ({ theme }) => {
 	return (
 		<div className="flex flex-col items-center justify-center gap-8 md:h-[600px] h-[400px]">
 			<motion.h1
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
-				className="text-white text-4xl"
+				className={`${theme ? "text-white" : "text-gray-900"} text-4xl`}
 			>
 				Technologies
 			</motion.h1>
@@ -50,7 +50,13 @@ const Technologies = () => {
 								className="flex flex-col items-center gap-2 cursor-pointer"
 							>
 								{React.cloneElement(tech.icon, { size: 50 })}
-								<span className="text-xs text-gray-300">
+								<span
+									className={`text-xs ${
+										theme
+											? "text-gray-300"
+											: "text-purple-950"
+									}`}
+								>
 									{tech.name}
 								</span>
 							</motion.div>

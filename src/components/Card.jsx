@@ -1,8 +1,14 @@
 import React from "react";
 
-const Card = ({ project }) => {
+const Card = ({ project, theme }) => {
 	return (
-		<div className="text-white w-[350px] bg-white/5 flex flex-col gap-4 pb-4 rounded-xl">
+		<div
+			className={`${
+				theme
+					? "text-white bg-white/5"
+					: "text-purple-950 bg-white shadow-md"
+			} w-[350px]  flex flex-col gap-4 pb-4 rounded-xl`}
+		>
 			<div>
 				<img
 					src={project.project_poster}
@@ -16,7 +22,11 @@ const Card = ({ project }) => {
 				{project.tech_stack.map((skill, index) => (
 					<div
 						key={index}
-						className="border-1 border-purple-400 text-purple-400 rounded-md p-1 text-sm"
+						className={`border-1 ${
+							theme
+								? "border-purple-400 text-purple-400"
+								: "border-purple-600 text-purple-600"
+						} rounded-md p-1 text-sm`}
 					>
 						{skill}
 					</div>

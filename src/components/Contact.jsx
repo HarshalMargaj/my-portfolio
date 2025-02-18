@@ -5,16 +5,20 @@ import { SiLeetcode } from "react-icons/si";
 import { TiLocation } from "react-icons/ti";
 import { IoMdMail } from "react-icons/io";
 
-const Contact = () => {
+const Contact = ({ theme }) => {
 	return (
-		<div className="h-[500px] flex flex-col justify-center items-center text-white gap-8">
+		<div
+			className={`h-[500px] flex flex-col justify-center items-center ${
+				theme ? "text-white" : "text-purple-950"
+			} gap-8`}
+		>
 			{/* Heading with Animation */}
 			<motion.h1
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: false }}
-				className="text-4xl text-white"
+				className={`text-4xl ${theme ? "text-white" : "text-gray-900"}`}
 			>
 				Get in Touch
 			</motion.h1>

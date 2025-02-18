@@ -4,7 +4,7 @@ import { TbBuildingSkyscraper } from "react-icons/tb";
 import { TiLocation } from "react-icons/ti";
 import experience from "../data/experience.json";
 
-const Experience = () => {
+const Experience = ({ theme }) => {
 	return (
 		<div className="md:h-screen h-full flex justify-center items-center py-10">
 			<div className="md:w-[60%] w-[80%] flex flex-col gap-10">
@@ -14,7 +14,9 @@ const Experience = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: false }}
 					transition={{ duration: 1 }}
-					className="text-white text-4xl text-center"
+					className={`${
+						theme ? "text-white" : "text-gray-900"
+					} text-4xl text-center`}
 				>
 					Experience
 				</motion.h1>
@@ -35,7 +37,11 @@ const Experience = () => {
 					{experience.map(data => (
 						<motion.div
 							key={data.id}
-							className="md:flex text-white  pb-6 mb-6"
+							className={`md:flex ${
+								theme
+									? "text-white"
+									: "text-gray-900 font-semibold"
+							}  pb-6 mb-6`}
 						>
 							{/* Duration (Slides in from Left) */}
 							<motion.div
@@ -58,7 +64,13 @@ const Experience = () => {
 							>
 								<div>
 									<div className="text-xl">{data.role}</div>
-									<div className="text-purple-400 flex items-center gap-2">
+									<div
+										className={`${
+											theme
+												? "text-purple-400"
+												: "text-purple-600 font-medium"
+										} flex items-center gap-2`}
+									>
 										<TbBuildingSkyscraper /> {data.name},{" "}
 										<TiLocation /> {data.location}
 									</div>
@@ -73,7 +85,11 @@ const Experience = () => {
 								>
 									{data.experience.map((exp, index) => (
 										<ul
-											className="list-disc list-inside text-gray-300"
+											className={`list-disc list-inside ${
+												theme
+													? "text-gray-300"
+													: "text-purple-950 font-normal"
+											}`}
 											key={index}
 										>
 											<li>{exp}</li>
@@ -111,7 +127,11 @@ const Experience = () => {
 													scale: 1,
 												},
 											}}
-											className="border border-purple-400 p-2 py-1 text-purple-400 rounded-md"
+											className={`border ${
+												theme
+													? "border-purple-400 text-purple-400"
+													: "text-purple-600 border-purple-600"
+											} p-2 py-1  rounded-md`}
 										>
 											{tech}
 										</motion.div>

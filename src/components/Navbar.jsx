@@ -42,19 +42,26 @@ const Navbar = ({ theme, setTheme }) => {
 
 	return (
 		<div
-			className={`fixed top-0 left-0 backdrop-blur-2xl w-full flex justify-between items-center px-6 py-4 md:px-20 text-white ${
-				scrolling ? "bg-white/5" : ""
-			}`}
+			className={`fixed top-0 left-0 backdrop-blur-2xl w-full flex justify-between items-center px-6 py-4 md:px-20 ${
+				theme ? "text-white" : "text-gray-900"
+			} ${scrolling ? "bg-white/5" : ""}`}
 		>
 			<h1 className="text-2xl md:text-4xl">
-				<span className="text-purple-400">H</span>M
+				<span
+					className={`${
+						theme ? "text-purple-400" : "text-purple-600"
+					}`}
+				>
+					H
+				</span>
+				M
 			</h1>
 
 			{/* Desktop Menu */}
 			<div
 				className={`hidden md:flex items-center gap-6 ml-50 ${
 					scrolling ? "" : "bg-white/5"
-				} p-4 rounded-4xl`}
+				} p-4 rounded-4xl `}
 			>
 				{menus.map(menu => (
 					<div
@@ -62,7 +69,9 @@ const Navbar = ({ theme, setTheme }) => {
 						onClick={() => handleScroll(menu.path)}
 						className={`cursor-pointer ${
 							menu.menu === "Hire me"
-								? "bg-purple-600 px-3 py-1 rounded-2xl hover:bg-purple-700 shadow-purple-400"
+								? `bg-purple-600 px-3 py-1 rounded-2xl hover:bg-purple-700 shadow-purple-400 ${
+										!theme ? "text-white" : ""
+								  }`
 								: "hover:text-purple-400"
 						}`}
 					>
