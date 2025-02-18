@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import photo from "../../public/assets/photo.png";
 
 const HeroSection = () => {
 	return (
@@ -18,9 +19,9 @@ const HeroSection = () => {
 				transition={{ duration: 1, delay: 0.2 }}
 			>
 				<img
-					src="https://www.profilebakery.com/wp-content/uploads/2023/08/men-after.jpeg"
+					src={photo}
 					alt=""
-					className="rounded-lg md:w-[300px] w-[200px]"
+					className="rounded-lg md:w-[250px] w-[200px]"
 				/>
 			</motion.div>
 

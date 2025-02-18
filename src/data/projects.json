@@ -1,0 +1,11 @@
+[
+	{
+		"id": 1,
+		"project_name": "Full Stack E-commerce Application",
+		"project_description": "Developed a fully functional eCommerce website using ReactJS, Tailwind CSS, Redux, Strapi, and Stripe. Implemented key features including search functionality, shopping cart, wishlist, user au-thentication, and secure payment processing with Stripe. Utilized Redux for efficient state management to enhance performance and data handling.",
+		"tech_stack": ["React.JS", "Strapi", "Stripe", "Redux", "Tailwind.CSS"],
+		"project_link": "https://shopvistav4.netlify.app/",
+		"project_source_code": "https://github.com/HarshalMargaj/E-Commerce-Application",
+		"project_poster": "/public/assets/E-Commerce.png"
+	}
+]
