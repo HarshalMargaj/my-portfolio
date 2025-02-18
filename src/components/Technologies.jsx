@@ -1,50 +1,3 @@
-// import React from "react";
-// import Marquee from "react-fast-marquee";
-// import { RiReactjsFill } from "react-icons/ri";
-// import { RiNextjsLine } from "react-icons/ri";
-// import { AiOutlinePython } from "react-icons/ai";
-// import { FaGit } from "react-icons/fa";
-// import { FaGithub } from "react-icons/fa";
-// import { SiRedux } from "react-icons/si";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { FaHtml5 } from "react-icons/fa";
-// import { FaCss3 } from "react-icons/fa";
-// import { IoLogoJavascript } from "react-icons/io";
-
-// const Technologies = () => {
-// 	return (
-// 		<div className="flex justify-center items-center flex-col gap-8 h-[500px]">
-// 			<div className="text-white text-4xl">Technologies</div>
-// 			<div className=" py-4 md:w-[60%] w-[80%]">
-// 				<Marquee gradient={false} speed={50} className="flex gap-8">
-// 					<div className="flex space-x-10">
-// 						<RiReactjsFill className="text-cyan-500" size={50} />
-// 						<RiNextjsLine className="text-white" size={50} />
-// 						<AiOutlinePython
-// 							className="text-yellow-500"
-// 							size={50}
-// 						/>
-// 						<RiTailwindCssFill
-// 							className="text-blue-400"
-// 							size={50}
-// 						/>
-// 						<IoLogoJavascript
-// 							className="text-yellow-300"
-// 							size={50}
-// 						/>
-// 						<FaHtml5 className="text-blue-400" size={50} />
-// 						<FaCss3 className="text-cyan-500" size={50} />
-// 						<FaGit className="text-gray-100" size={50} />
-// 						<FaGithub className="text-gray-100" size={50} />
-// 						<SiRedux className="text-purple-400" size={50} />
-// 					</div>
-// 				</Marquee>
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export default Technologies;
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
@@ -72,7 +25,7 @@ const techStack = [
 
 const Technologies = () => {
 	return (
-		<div className="flex flex-col items-center justify-center gap-8 h-[600px]">
+		<div className="flex flex-col items-center justify-center gap-8 md:h-[600px] h-[400px]">
 			<motion.h1
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}

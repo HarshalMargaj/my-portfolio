@@ -9,7 +9,7 @@ const HeroSection = () => {
 			whileInView={{ opacity: 1 }}
 			viewport={{ once: false }}
 			transition={{ duration: 1 }}
-			className="flex items-center justify-center h-[80vh] flex-col gap-4"
+			className="flex items-center justify-center h-full md:h-[80vh] flex-col gap-4 py-10"
 		>
 			{/* Profile Image */}
 			<motion.div
@@ -21,7 +21,7 @@ const HeroSection = () => {
 				<img
 					src={photo}
 					alt=""
-					className="rounded-lg md:w-[250px] w-[200px]"
+					className="rounded-lg md:w-[250px] w-[200px] mt-25"
 				/>
 			</motion.div>
 
