@@ -32,7 +32,7 @@ const Card = ({ project, theme }) => {
 					</div>
 				))}
 			</div>
-			<div className="px-4 w-full flex items-center gap-4">
+			<div className="px-4 w-full flex items-center gap-4 mt-auto">
 				<a
 					href={project.project_link}
 					target="_blank"

@@ -2,10 +2,28 @@
 	{
 		"id": 1,
 		"project_name": "Full Stack E-commerce Application",
-		"project_description": "Developed a fully functional eCommerce website using ReactJS, Tailwind CSS, Redux, Strapi, and Stripe. Implemented key features including search functionality, shopping cart, wishlist, user au-thentication, and secure payment processing with Stripe. Utilized Redux for efficient state management to enhance performance and data handling.",
+		"project_description": "Built a feature-rich eCommerce site using ReactJS, Tailwind CSS, Redux, Strapi, and Stripe. Implemented search, cart, wishlist, authentication, and secure payments. Ensured a responsive UI and optimized state management with Redux.",
 		"tech_stack": ["React.JS", "Strapi", "Stripe", "Redux", "Tailwind.CSS"],
 		"project_link": "https://shopvistav4.netlify.app/",
 		"project_source_code": "https://github.com/HarshalMargaj/E-Commerce-Application",
 		"project_poster": "/public/assets/E-Commerce.png"
+	},
+	{
+		"id": 1,
+		"project_name": "Full Stack Project Management Took",
+		"project_description": "Built a Trello-like project management app using ReactJS, Next.js, TypeScript, Zustand, Tailwind CSS, Clerk, Prisma, and Supabase. Features include organizations, boards, lists, tasks, drag-and-drop, and authentication. Ensured a real-time, responsive UI with optimized state management.",
+		"tech_stack": [
+			"React.JS",
+			"Next.Js",
+			"TypeScript",
+			"Tailwind.CSS",
+			"Zustand",
+			"Clerk",
+			"Prisma",
+			"Supabase"
+		],
+		"project_link": "https://taskflow-v3.vercel.app/",
+		"project_source_code": "https://github.com/HarshalMargaj/taskflow",
+		"project_poster": "/public/assets/taskflow.png"
 	}
 ]
