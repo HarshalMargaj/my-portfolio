@@ -77,7 +77,8 @@ const About = ({ theme }) => {
 							theme ? "text-purple-400" : "text-purple-600"
 						}`}
 					>
-						React.js, Next.js, Redux, Git, GitHub, and Tailwind CSS
+						React.js, Next.js, TypeScript, Redux, Git, GitHub, and
+						Tailwind CSS
 					</span>{" "}
 					, and I have a strong focus on code optimization to ensure
 					clean, maintainable, and efficient development. With a keen

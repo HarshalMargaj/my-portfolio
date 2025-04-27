@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
 		{ id: 3, menu: "Experience", path: "experience" },
 		{ id: 4, menu: "Projects", path: "projects" },
 		{ id: 5, menu: "Contact", path: "contact" },
-		{ id: 6, menu: "Hire me", path: "contact" },
+		{ id: 6, menu: "Download CV", path: "" },
 	];
 
 	const handleTheme = () => {
@@ -68,14 +68,24 @@ const Navbar = ({ theme, setTheme }) => {
 						key={menu.id}
 						onClick={() => handleScroll(menu.path)}
 						className={`cursor-pointer ${
-							menu.menu === "Hire me"
+							menu.menu === "Download CV"
 								? `bg-purple-600 px-3 py-1 rounded-2xl hover:bg-purple-700 shadow-purple-400 ${
 										!theme ? "text-white" : ""
 								  }`
 								: "hover:text-purple-400"
 						}`}
 					>
-						{menu.menu}
+						{menu.menu === "Download CV" ? (
+							<a
+								href="/CV_Harshal_Margaj.pdf"
+								download="CV_Harshal_Margaj.pdf"
+								// className="your-button-styles"
+							>
+								{menu.menu}
+							</a>
+						) : (
+							menu.menu
+						)}
 					</div>
 				))}
 			</div>

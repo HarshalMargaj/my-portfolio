@@ -7,7 +7,7 @@ const Card = ({ project, theme }) => {
 				theme
 					? "text-white bg-white/5"
 					: "text-purple-950 bg-white shadow-md"
-			} w-[350px]  flex flex-col gap-4 pb-4 rounded-xl`}
+			} w-[450px]  flex flex-col gap-4 pb-4 rounded-xl`}
 		>
 			<div>
 				<img

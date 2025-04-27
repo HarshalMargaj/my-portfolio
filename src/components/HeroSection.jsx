@@ -72,7 +72,8 @@ const HeroSection = ({ theme }) => {
 						theme ? "text-purple-400 " : "text-purple-600"
 					} antialiased`}
 				>
-					React, Next.js, Redux, Tailwind CSS, Git, and GitHub
+					React, Next.js, TypeScript, Redux, Tailwind CSS, Git, and
+					GitHub
 				</span>
 				. I love crafting seamless UI/UX experiences and turning ideas
 				into reality with clean, maintainable code.

@@ -6,7 +6,7 @@
 		"tech_stack": ["React.JS", "Strapi", "Stripe", "Redux", "Tailwind.CSS"],
 		"project_link": "https://shopvistav4.netlify.app/",
 		"project_source_code": "https://github.com/HarshalMargaj/E-Commerce-Application",
-		"project_poster": "/public/assets/E-Commerce.png"
+		"project_poster": "/assets/E-Commerce.png"
 	},
 	{
 		"id": 1,
@@ -20,10 +20,11 @@
 			"Zustand",
 			"Clerk",
 			"Prisma",
-			"Supabase"
+			"Supabase",
+			"Shadcn"
 		],
 		"project_link": "https://taskflow-v3.vercel.app/",
 		"project_source_code": "https://github.com/HarshalMargaj/taskflow",
-		"project_poster": "/public/assets/taskflow.png"
+		"project_poster": "/assets/taskflow.png"
 	}
 ]
